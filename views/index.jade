@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1=title
+  //- For the creatives - there are 3 crops available. 306x306, 150x150 or 612x612
+  img(url=post.images['306x306'])
+  //- And there is a caption but it doesn't always text in it
+  p=post.caption
+
+  script(src='/javascripts/index.js')
